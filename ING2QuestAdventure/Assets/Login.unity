@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 808809130}
   - component: {fileID: 808809129}
   m_Layer: 0
-  m_Name: TextMeshPro - InputField
+  m_Name: passwordField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -665,7 +665,7 @@ GameObject:
   - component: {fileID: 819416116}
   - component: {fileID: 819416115}
   m_Layer: 0
-  m_Name: TextMeshPro - InputField (1)
+  m_Name: userNameField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1916,7 +1916,7 @@ GameObject:
   - component: {fileID: 1944455480}
   - component: {fileID: 1944455479}
   m_Layer: 0
-  m_Name: aceptarButton
+  m_Name: loginButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2492,9 +2492,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Aceptar
-
-'
+  m_Text: Login
 --- !u!222 &2046223591
 CanvasRenderer:
   m_ObjectHideFlags: 0
