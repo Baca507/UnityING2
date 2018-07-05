@@ -8,6 +8,7 @@ public class PreguntaActivacionPrueba : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other)
     {   if (other.tag == "Player")
         {
+
             Debug.Log("Se confirma activacion");
         }
     }
