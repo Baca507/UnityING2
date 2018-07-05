@@ -358,7 +358,7 @@ MonoBehaviour:
   m_Text: 
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
-  m_ReadOnly: 0
+  m_ReadOnly: 1
 --- !u!114 &229254055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1115,7 +1115,7 @@ MonoBehaviour:
   m_Text: 
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
-  m_ReadOnly: 0
+  m_ReadOnly: 1
 --- !u!114 &852236672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1249,7 +1249,7 @@ MonoBehaviour:
   m_Text: 
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
-  m_ReadOnly: 0
+  m_ReadOnly: 1
 --- !u!114 &938132871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1458,7 +1458,7 @@ MonoBehaviour:
   m_Text: 
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
-  m_ReadOnly: 0
+  m_ReadOnly: 1
 --- !u!114 &994918882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1747,7 +1747,7 @@ MonoBehaviour:
   m_Text: 
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
-  m_ReadOnly: 0
+  m_ReadOnly: 1
 --- !u!114 &1150241320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2200,7 +2200,7 @@ MonoBehaviour:
   m_Text: 
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
-  m_ReadOnly: 0
+  m_ReadOnly: 1
 --- !u!114 &1655301066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2654,7 +2654,7 @@ MonoBehaviour:
   m_Text: 
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
-  m_ReadOnly: 0
+  m_ReadOnly: 1
 --- !u!114 &1872219536
 MonoBehaviour:
   m_ObjectHideFlags: 0
