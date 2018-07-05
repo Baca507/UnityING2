@@ -11,3 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Mantenimiento.unity
     guid: 66fb67cb32b4f471a9013ac6c79ebec4
+  - enabled: 1
+    path: Assets/Buscar.unity
+    guid: 76f3abc94ac82af48a808a898971e58d
+  - enabled: 1
+    path: Assets/Perfil.unity
+    guid: 66d0355bd914b3549a7f049b73089e95
