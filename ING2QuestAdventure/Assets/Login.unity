@@ -730,6 +730,8 @@ RectTransform:
   - {fileID: 1095147763}
   - {fileID: 1691725937}
   - {fileID: 1541901106}
+  - {fileID: 2111973674}
+  - {fileID: 1344574282}
   m_Father: {fileID: 304930475}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -830,8 +832,6 @@ RectTransform:
   - {fileID: 198418776}
   - {fileID: 505944355}
   - {fileID: 289591960}
-  - {fileID: 2111973674}
-  - {fileID: 1344574282}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1199,7 +1199,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cbe5668cc0e8b64fa62f1b81c2be677, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d37fe593f68e4acdb3538b9e019abf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!20 &519420031
@@ -2076,7 +2076,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 519420030}
+      - m_Target: {fileID: 0}
         m_MethodName: ShowRegistro
         m_Mode: 1
         m_Arguments:
@@ -2874,7 +2874,7 @@ GameObject:
   - component: {fileID: 1344574284}
   - component: {fileID: 1344574283}
   m_Layer: 5
-  m_Name: BuscarPerfil
+  m_Name: BuscarPerfilButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2891,7 +2891,7 @@ RectTransform:
   m_LocalScale: {x: 1.0001999, y: 1.0001999, z: 1.0001999}
   m_Children:
   - {fileID: 1998502406}
-  m_Father: {fileID: 304930475}
+  m_Father: {fileID: 289591960}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -3294,14 +3294,14 @@ RectTransform:
   m_GameObject: {fileID: 1627841520}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1929308, y: 1.1929312, z: 1.1929312}
   m_Children: []
   m_Father: {fileID: 304930475}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.9, y: -0.9}
+  m_AnchoredPosition: {x: -0.8999901, y: -0.9}
   m_SizeDelta: {x: 838.3, y: 365.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1627841522
@@ -3695,7 +3695,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 519420030}
+      - m_Target: {fileID: 0}
         m_MethodName: ShowLogin
         m_Mode: 1
         m_Arguments:
@@ -4896,8 +4896,9 @@ GameObject:
   - component: {fileID: 2111973677}
   - component: {fileID: 2111973676}
   - component: {fileID: 2111973675}
+  - component: {fileID: 2111973678}
   m_Layer: 5
-  m_Name: Mantenimiento
+  m_Name: MantenimientoButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4914,7 +4915,7 @@ RectTransform:
   m_LocalScale: {x: 1.0001999, y: 1.0001999, z: 1.0001999}
   m_Children:
   - {fileID: 1725373767}
-  m_Father: {fileID: 304930475}
+  m_Father: {fileID: 289591960}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -4960,7 +4961,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2111973676}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 519420030}
+        m_MethodName: changemenuscene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Mantenimiento
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2111973676
@@ -4996,3 +5008,14 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2111973673}
+--- !u!114 &2111973678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2111973673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d294d851dfb864be1bb25c3c3ee260a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
