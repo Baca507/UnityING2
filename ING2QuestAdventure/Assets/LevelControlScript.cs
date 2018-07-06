@@ -11,7 +11,7 @@ public class LevelControlScript : MonoBehaviour {
 
     // References to game objects that should be enabled
     // when correct or incorrect answer is given
-    public GameObject correctSign, incorrectSign;
+    public GameObject correctSign, incorrectSign,P1;
     //cup, trophySing;
 
 	// Variable to contain current scene build index
@@ -104,9 +104,9 @@ public class LevelControlScript : MonoBehaviour {
 	//}
 
 	// Method loads next level depending on current scenes build index
-	void LoadNextLevel()
-	{
-		SceneManager.LoadScene (currentSceneIndex + 1);
-	}
+	//void LoadNextLevel()
+	//{
+		//SceneManager.LoadScene (currentSceneIndex + 1);
+	//}
 
 }
