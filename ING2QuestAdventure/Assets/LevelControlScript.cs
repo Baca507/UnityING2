@@ -7,15 +7,15 @@ public class LevelControlScript : MonoBehaviour {
 
 	// Get references to game objects that should be disabled and enabled
 	// at the start
-	GameObject[] toEnable, toDisable;
+	GameObject[] Pregunta1, Pregunta2, Pregunta3, Pregunta4, Pregunta5, Cierto, Falso, CiertoS, FalsoS, Info1, Info2, Info3, Info4, Info5;
 
     // References to game objects that should be enabled
     // when correct or incorrect answer is given
-    public GameObject correctSign, incorrectSign,P1;
+    public GameObject correctSign, incorrectSign;
     //cup, trophySing;
 
 	// Variable to contain current scene build index
-	int currentSceneIndex;
+	//int currentSceneIndex;
 
 	// Variable name to pass to Player Prefs meaning which variable to set as got
 	// Adjustable in inspector depending on current scene and trophy
@@ -26,87 +26,82 @@ public class LevelControlScript : MonoBehaviour {
 	void Start () {
 
 		// Getting current scene build index
-		currentSceneIndex = SceneManager.GetActiveScene ().buildIndex;
+		//currentSceneIndex = SceneManager.GetActiveScene ().buildIndex;
 
-		// Finding game objects with tags "ToEnable" and "ToDisable"
-		toEnable = GameObject.FindGameObjectsWithTag ("ToEnable");
-		toDisable = GameObject.FindGameObjectsWithTag ("ToDisable");
+		// Finding game objects with tags
+        Info1 = GameObject.FindGameObjectsWithTag("Info1");
+        Info2 = GameObject.FindGameObjectsWithTag("Info2");
+        Info3 = GameObject.FindGameObjectsWithTag("Info3");
+        Info4 = GameObject.FindGameObjectsWithTag("Info4");
+        Info5 = GameObject.FindGameObjectsWithTag("Info5");
+        Cierto = GameObject.FindGameObjectsWithTag("Cierto");
+        Falso = GameObject.FindGameObjectsWithTag("Falso");
+        CiertoS = GameObject.FindGameObjectsWithTag("CiertoS");
+        FalsoS = GameObject.FindGameObjectsWithTag("FalsoS");
+        Pregunta1 = GameObject.FindGameObjectsWithTag("Pregunta1");
+        Pregunta2 = GameObject.FindGameObjectsWithTag("Pregunta2");
+        Pregunta3 = GameObject.FindGameObjectsWithTag("Pregunta3");
+        Pregunta4 = GameObject.FindGameObjectsWithTag("Pregunta4");
+        Pregunta5 = GameObject.FindGameObjectsWithTag("Pregunta5");
 
-		// Disabling game objects with tag "ToEnable"
-		foreach (GameObject element in toEnable)
-		{
-			element.gameObject.SetActive (false);
-		}
+        // Disabling game objects with tag
+        foreach (GameObject element in Info1)
+        {
+            element.gameObject.SetActive(false);
+        }
+        foreach (GameObject element in Info2)
+        {
+            element.gameObject.SetActive(false);
+        }
+        foreach (GameObject element in Info3)
+        {
+            element.gameObject.SetActive(false);
+        }
+        foreach (GameObject element in Info4)
+        {
+            element.gameObject.SetActive(false);
+        }
+        foreach (GameObject element in Info5)
+        {
+            element.gameObject.SetActive(false);
+        }
+        foreach (GameObject element in Pregunta1)
+        {
+            element.gameObject.SetActive(false);
+        }
+        foreach (GameObject element in Pregunta2)
+        {
+            element.gameObject.SetActive(false);
+        }
+        foreach (GameObject element in Pregunta3)
+        {
+            element.gameObject.SetActive(false);
+        }
+        foreach (GameObject element in Pregunta4)
+        {
+            element.gameObject.SetActive(false);
+        }
+        foreach (GameObject element in Pregunta5)
+        {
+            element.gameObject.SetActive(false);
+        }
+        foreach (GameObject element in Cierto)
+        {
+            element.gameObject.SetActive(false);
+        }
+        foreach (GameObject element in CiertoS)
+        {
+            element.gameObject.SetActive(false);
+        }
+        foreach (GameObject element in Falso)
+        {
+            element.gameObject.SetActive(false);
+        }
+        foreach (GameObject element in FalsoS)
+        {
+            element.gameObject.SetActive(false);
+        }
 
-	}
-
-	// Method is invoked when correct answer is given
-	public void RightAnswer()
-	{
-		// Disabling game objects that are no longer needed
-		foreach (GameObject element in toDisable)
-		{
-			element.gameObject.SetActive (false);
-		}
-
-		// Turn on "correct" sign
-		correctSign.gameObject.SetActive (true);
-
-		// Getting a value if you already got current trophy
-		//int Cupgot = PlayerPrefs.GetInt(whichCupGot);
-
-		// If you already got current trophy
-		//if (Cupgot == 1)
-
-			// then you proceed to next level
-			//Invoke ("LoadNextLevel", 1f);
-
-		// if you don't have current trophy yet
-		//else
-			// then GetTrophy method is invoked in 1 second
-			//Invoke ("GetTrophy", 1f);
-	}
-
-	// Method is invoked if incorrect answer is given
-	public void WrongAnswer()
-	{
-		// Disabling game objects that are no longer needed
-		foreach (GameObject element in toDisable)
-		{
-			element.gameObject.SetActive (false);
-		}
-
-		// Turn on "incorrect" sign
-		incorrectSign.SetActive (true);
-
-		// Invoke GotoMainMenu method in 1 second
-		//Invoke ("GotoMainMenu", 1f);
-	}
-
-	// Method is invoked if you don't have current trophy yet
-	//void GetTrophy()
-	//{
-		// "Correct" sing is turned on
-		//correctSign.SetActive (false);
-
-		// Trophy game object is shown
-		//cup.SetActive (true);
-
-		// "You got new trophy" sign is shown
-		//trophySing.SetActive (true);
-
-		// Set Player Prefs whichCupGot variable so you got this trophy
-		// to store this value between the scenes
-		//PlayerPrefs.SetInt (whichCupGot, 1);
-
-		// Invoke LoadNextLevel method in 1 second
-		//Invoke ("LoadNextLevel", 1f);
-	//}
-
-	// Method loads next level depending on current scenes build index
-	//void LoadNextLevel()
-	//{
-		//SceneManager.LoadScene (currentSceneIndex + 1);
-	//}
+    }
 
 }
